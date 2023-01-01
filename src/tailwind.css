@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+      font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        color: #212832;
+    }
+
+    .dot-active {
+        background-color: #84829A !important;
+    }
+    .slide-active {
+        --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+        --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        position: relative !important;
+        z-index: 10 !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        border: none !important;
+    }
+
+    .decore-circle {
+        position: absolute;
+        z-index: -1;
+
+        margin-top:100px;
+        width:150px; height:150px;
+        border:1px solid #C4C4C4;
+        border-radius: 1000px;
+        
+        box-shadow: 7px -7px 0px 7px white,
+                     8px -8px 0px 8px #C4C4C4,
+                      14px -14px 0px 14px white,
+                        15px -15px 0px 15px #C4C4C4,
+                          28px -28px 0px 28px white,
+                            29px -29px 0px 29px #C4C4C4,
+                              45px -45px 0px 45px white,
+                                46px -46px 0px 46px #C4C4C4,
+                                  60px -60px 0px 60px white,
+                                    61px -61px 0px 61px #C4C4C4;
+          
+      }
+
+      .btn-press-effect {
+        /* background-color: #F1A501; */
+        border: none;
+        transition: 0.2s;
+        cursor: pointer;
+      }
+      
+      .btn-press-effect:hover {
+        box-shadow: 0px 6px 0px #e4b44c;
+        transform: translateY(-6px);
+        
+      }
+      .btn-press-effect:active{
+        transform: translateY(6px);
+        box-shadow: 0px 3px 0 #e4b44c;
+      }
+      
+}
