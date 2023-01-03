@@ -11,12 +11,12 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="max-w-[1440px] mx-auto">
+    <div class="container max-w-[1440px] mx-auto">
         <!-- header -->
-        <header class="h-20 fixed top-0 left-0 right-0 z-50 bg-white shadow-2xl">
+        <header class="h-20 lg:fixed lg:top-0 lg:left-0 lg:right-0 z-50 bg-white shadow-2xl">
             <nav class="h-full flex justify-between items-center container mx-auto px-4 max-w-[1200px]">
                 <a href="index.html"><img src="./img/logo.png" alt=""></a>
-                <ul class="flex justify-center items-center gap-x-[55px] h-full">
+                <ul class="hidden lg:flex justify-center items-center gap-x-[55px] h-full">
                     <li><a href="#" class=" hover:text-primary transition duration-700 ease-in-out">Desitnations</a></li>
                     <li><a href="#" class=" hover:text-primary transition duration-700 ease-in-out">Hotels</a></li>
                     <li><a href="#" class=" hover:text-primary transition duration-700 ease-in-out">Flights</a></li>
@@ -34,29 +34,29 @@
         
                 </ul>
         
-                <!-- <div>
+                <div class="lg:hidden">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                                                       </svg>
                                                       
-                                                </div> -->
+                                                </div>
             </nav>
         </header>
 
         <!-- banner -->
-        <section class="container max-w-[1200px] mx-auto mt-20">
-            <div class="flex justify-between">
-                <div class="max-w-[40%] flex flex-col gap-y-[30px] mt-28">
-                    <h3 class="text-[#DF6951] text-xl font-bold">Best Destinations around the world</h3>
+        <section class="container max-w-[1200px] mx-auto lg:mt-20 mt-10">
+            <div class="flex justify-between flex-col-reverse items-center lg:flex-row px-10">
+                <div class="lg:max-w-[40%] flex flex-col gap-y-[30px] lg:mt-28">
+                    <h3 class="text-[#DF6951] lg:text-xl font-bold">Best Destinations around the world</h3>
                     <div class="relative">
-                        <h2 class="text-[#181E4B] font-bold text-[78px] font-volkhov tracking-[-5px] leading-[89px]">Travel, enjoy
+                        <h2 class="text-[#181E4B] font-bold lg:text-[78px] text-[20px] font-volkhov lg:tracking-[-5px] lg:leading-[89px]">Travel, enjoy
                             and live a new
                             and full life</h2>
-                            <img src="./img/Decore.png" alt="" class="absolute top-[65px] right-[-120px] z-[-1]">
+                            <img src="./img/Decore.png" alt="" class="hidden lg:absolute lg:top-[65px] lg:right-[-120px] lg:z-[-1]">
 
                     </div>
                     <p class="text-[#5E6282]">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
-                    <div class="flex justify-between items-center pr-20">
+                    <div class="flex justify-between items-center lg:pr-20 md:pr-40">
                         <button type="submit" class=" btn-press-effect bg-primary px-4 py-2 rounded-md text-white text-lg">Find out more</button>
                         <button type="submit" class="flex px-4 py-2 gap-x-2 items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 bg-[#DF6951] rounded-full text-white p-2">
@@ -68,16 +68,16 @@
                     </div>
                 </div>
                 <div class="relative">
-                    <img class="w-[765px] h-[765px]" src="./img/Traveller 1.png" alt="">
-                    <img class="w-36 h-20 absolute top-28 left-36" src="./img/plane.png" alt="">
-                    <img class="w-36 h-20 absolute top-40 right-[-1.5rem]" src="./img/plane2.png" alt="">
+                    <img class="lg:w-[765px] lg:h-[765px] h-full w-full" src="./img/Traveller 1.png" alt="">
+                    <img class="w-36 h-20 absolute lg:top-28 lg:left-36 top-[15px] left-[40px]" src="./img/plane.png" alt="">
+                    <img class="w-36 h-20 absolute lg:top-40 lg:right-[-1.5rem] top-[40px] right-[-60px]" src="./img/plane2.png" alt="">
                 </div>
             </div>
         </section>
 
         <!-- category -->
         <section class="container max-w-[1200px] mx-auto mt-24 relative">
-            <div class="absolute grid grid-cols-5 gap-x-4 right-0 text-[#E5E5E5]">
+            <div class="hidden lg:absolute md:absolute md:grid md:grid-cols-5 md:gap-x-2 md:right-0 lg:grid lg:grid-cols-5 lg:gap-x-4 lg:right-0 text-[#E5E5E5]">
                 <span class="plus1 text-[#FF7152]">+</span>
                 <span class="plus2">+</span>
                 <span class="plus3">+</span>
@@ -106,8 +106,8 @@
             </div>
             <h4 class="uppercase text-[#5E6282] text-lg font-semibold text-center">CATEGORY</h4>
             <h2 class="capitalize mt-[10px] text-[#14183E] font-volkhov text-5xl font-bold text-center">We offer best Services</h2>
-            <div class="flex mt-24 gap-x-20">
-                <div class="w-1/4 hover:before:content-[''] hover:before:w-[100px] hover:before:h-[100px] hover:before:bg-[#DF6951] hover:before:rounded-tl-[50px] hover:before:rounded-br-3xl hover:before:absolute hover:before:bottom-[-30px] hover:before:left-[-10px] hover:before:z-[-1] hover:before:transition hover:before:duration-1000 hover:before:ease-in before:z-[-1] relative z-10 bg-white">
+            <div class="flex  mt-12 lg:mt-24 lg:gap-x-20 flex-col lg:flex-row  px-7 lg:px-0">
+                <div class="xl:w-1/4  hover:before:content-[''] hover:before:w-[100px] hover:before:h-[100px] hover:before:bg-[#DF6951] hover:before:rounded-tl-[50px] hover:before:rounded-br-3xl hover:before:absolute hover:before:bottom-[-30px] hover:before:left-[-10px] hover:before:z-[-1] hover:before:transition hover:before:duration-1000 hover:before:ease-in before:z-[-1] relative z-10 bg-white">
                     <a class="flex justify-center flex-col items-center px-3 py-7 rounded-3xl transition duration-300 ease-in hover:bg-white hover:z-10 hover:shadow-xl hover:translate-x-10 hover:translate-y-[-30px] " href="#">
                         <img src="./img/services1.png" alt="" class="w-[70px] h-[60px]">
                             <h3 class="my-2 text-[#1E1D4C] font-semibold text-xl">Calculated Weather</h3>
@@ -115,21 +115,21 @@
                     </a>
                 </div>
 
-                <div class="w-1/4 hover:before:content-[''] hover:before:w-[100px] hover:before:h-[100px] hover:before:bg-[#DF6951] hover:before:rounded-tl-[50px] hover:before:rounded-br-3xl hover:before:absolute hover:before:bottom-[-30px] hover:before:left-[-10px] hover:before:z-[-1] hover:before:transition hover:before:duration-1000 hover:before:ease-in before:z-[-1] relative z-10 bg-white">
+                <div class="xl:w-1/4  hover:before:content-[''] hover:before:w-[100px] hover:before:h-[100px] hover:before:bg-[#DF6951] hover:before:rounded-tl-[50px] hover:before:rounded-br-3xl hover:before:absolute hover:before:bottom-[-30px] hover:before:left-[-10px] hover:before:z-[-1] hover:before:transition hover:before:duration-1000 hover:before:ease-in before:z-[-1] relative z-10 bg-white">
                     <a class="flex justify-center flex-col items-center px-3 py-7 rounded-3xl transition duration-300 ease-in hover:bg-white hover:z-10 hover:shadow-xl hover:translate-x-10 hover:translate-y-[-30px] " href="#">
                         <img src="./img/services2.png" alt="" class="w-[70px] h-[60px]">
                             <h3 class="my-2 text-[#1E1D4C] font-semibold text-xl">Best Flights</h3>
                         <p class="text-center">Engrossed listening. Park gate sell they west hard for the.</p>
                     </a>
                 </div>
-                <div class="w-1/4 hover:before:content-[''] hover:before:w-[100px] hover:before:h-[100px] hover:before:bg-[#DF6951] hover:before:rounded-tl-[50px] hover:before:rounded-br-3xl hover:before:absolute hover:before:bottom-[-30px] hover:before:left-[-10px] hover:before:z-[-1] hover:before:transition hover:before:duration-1000 hover:before:ease-in before:z-[-1] relative z-10 bg-white">
+                <div class="xl:w-1/4  hover:before:content-[''] hover:before:w-[100px] hover:before:h-[100px] hover:before:bg-[#DF6951] hover:before:rounded-tl-[50px] hover:before:rounded-br-3xl hover:before:absolute hover:before:bottom-[-30px] hover:before:left-[-10px] hover:before:z-[-1] hover:before:transition hover:before:duration-1000 hover:before:ease-in before:z-[-1] relative z-10 bg-white">
                     <a class="flex justify-center flex-col items-center px-3 py-7 rounded-3xl transition duration-300 ease-in hover:bg-white hover:z-10 hover:shadow-xl hover:translate-x-10 hover:translate-y-[-30px] " href="#">
                         <img src="./img/services3.png" alt="" class="w-[70px] h-[60px]">
                             <h3 class="my-2 text-[#1E1D4C] font-semibold text-xl">Local Events</h3>
                         <p class="text-center">Barton vanity itself do in it. Preferd to men it engrossed listening. </p>
                     </a>
                 </div>
-                <div class="w-1/4 hover:before:content-[''] hover:before:w-[100px] hover:before:h-[100px] hover:before:bg-[#DF6951] hover:before:rounded-tl-[50px] hover:before:rounded-br-3xl hover:before:absolute hover:before:bottom-[-30px] hover:before:left-[-10px] hover:before:z-[-1] hover:before:transition hover:before:duration-1000 hover:before:ease-in before:z-[-1] relative z-10 bg-white">
+                <div class="xl:w-1/4  hover:before:content-[''] hover:before:w-[100px] hover:before:h-[100px] hover:before:bg-[#DF6951] hover:before:rounded-tl-[50px] hover:before:rounded-br-3xl hover:before:absolute hover:before:bottom-[-30px] hover:before:left-[-10px] hover:before:z-[-1] hover:before:transition hover:before:duration-1000 hover:before:ease-in before:z-[-1] relative z-10 bg-white">
                     <a class="flex justify-center flex-col items-center px-3 py-7 rounded-3xl transition duration-300 ease-in hover:bg-white hover:z-10 hover:shadow-xl hover:translate-x-10 hover:translate-y-[-30px] " href="#">
                         <img src="./img/services4.png" alt="" class="w-[70px] h-[60px]">
                             <h3 class="my-2 text-[#1E1D4C] font-semibold text-xl">Customization</h3>
@@ -145,10 +145,10 @@
 
         <!-- top selling -->
         <section class="container max-w-[1100px] mx-auto mt-24 relative">
-            <img src="./img/Decore2.png" alt="" class="absolute right-[1px] bottom-[20px] z-[-1]">
+            <img src="./img/Decore2.png" alt="" class="absolute right-[1px] bottom-[20px] z-[-1] md:hidden">
             <h4 class="uppercase text-[#5E6282] text-lg font-semibold text-center">TOP selling</h4>
             <h2 class="capitalize mt-[10px] text-[#14183E] font-volkhov text-5xl font-bold text-center">Top Destinations</h2>
-            <div class="mt-24 flex gap-x-9 ml-6">
+            <div class="mt-24 flex gap-x-9 lg:ml-6 flex-col lg:flex-row items-center lg:items-baseline gap-y-10 lg:gap-y-0">
                 <div class="w-[315px] rounded-xl bg-white shadow-2xl pb-4 flex flex-col justify-between">
                     <a href="">
                         <img src="./img/rome.png" alt="" class="w-full h-[300px] rounded-t-xl">
@@ -209,13 +209,13 @@
         </section>
 
         <!-- booking step -->
-        <section class="container max-w-[1200px] mx-auto mt-48">
-            <h4 class="text-[#5E6282] text-lg font-semibold ml-16">Easy and Fast</h4>
-            <div class="flex gap-x-32">
-                <div class="w-1/2 ml-16">
-                    <h2 class="capitalize mt-[15px] text-[#14183E] font-volkhov text-5xl font-bold mb-8">Book your next trip 
+        <section class="container max-w-[1200px] mx-auto lg:mt-48 mt-24">
+            <h4 class="text-[#5E6282] text-lg font-semibold lg:ml-16 text-center lg:text-start">Easy and Fast</h4>
+            <div class="flex lg:gap-x-32 lg:flex-row flex-col">
+                <div class="lg:w-1/2 lg:ml-16">
+                    <h2 class="capitalize mt-[15px] text-[#14183E] font-volkhov text-5xl font-bold mb-8 text-center lg:text-start">Book your next trip 
                         in 3 easy steps</h2>
-                    <div class="flex flex-col gap-y-7">
+                    <div class="flex flex-col gap-y-7 px-8 lg:px-0">
                         <div class="flex gap-x-4">
                             <div class="flex items-center">
                                 <img src="./img/booking1.png" alt="">
@@ -249,15 +249,15 @@
                         
                     </div>
                 </div>
-                <div class="w-1/2 flex items-start">
+                <div class="lg:w-1/2 flex lg:items-start items-center">
                     <img src="./img/demoBooking.png" alt="" class="w-[485px] h-[460px]">
                 </div>
             </div>
         </section>
 
         <!-- customer comment -->
-        <section class="container max-w-[1200px] mx-auto mt-48 relative">
-            <div class="flex flex-col gap-y-14 absolute right-0 top-1/2 z-[2]">
+        <section class="container max-w-[1200px] mx-auto mt-24 lg:mt-48 relative">
+            <div class="flex flex-col gap-y-14 absolute lg:right-0 lg:top-1/2 z-[2] lg:rotate-0 top-[41rem] right-1/2 rotate-90">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cursor-pointer hover:text-primary btn-pre">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
                   </svg>
@@ -266,18 +266,18 @@
                   </svg>
             </div>
               
-            <h4 class="text-[#5E6282] text-lg font-semibold ml-16">Testimonials</h4>
-            <div class="flex gap-x-20">
-                <div class="w-[40%] ml-16">
-                    <h2 class="capitalize mt-[15px] text-[#14183E] font-volkhov text-5xl font-bold mb-20">What people say about Us.</h2>
-                    <div class="flex gap-x-6">
+            <h4 class="text-[#5E6282] text-lg font-semibold lg:ml-16 lg:text-start text-center">Testimonials</h4>
+            <div class="flex gap-x-20 flex-col lg:flex-row">
+                <div class="lg:w-[40%] lg:ml-16">
+                    <h2 class="capitalize mt-[15px] text-[#14183E] font-volkhov text-5xl font-bold mb-20 lg:text-start text-center">What people say about Us.</h2>
+                    <div class="flex gap-x-6 lg:mb-0 mb-20 justify-center lg:justify-start">
                         <div class="w-3 h-3 rounded-full bg-[#E5E5E5] dot-active"></div>
                         <div class="w-3 h-3 rounded-full bg-[#E5E5E5] "></div>
                         <div class="w-3 h-3 rounded-full bg-[#E5E5E5] "></div>
                     </div>
                 </div>
-                <div class="w-[60%] text-[#5E6282] relative">
-                    <div class="my-slider w-[500px] h-[220px] bg-white pl-8 pr-16 py-7 slide-active rounded-2xl border-2 bottom-[-95px] right-[64px] absolute">
+                <div class="lg:w-[60%] text-[#5E6282] relative px-9 lg:px-0">
+                    <div class="my-slider lg:w-[500px] lg:h-[220px] bg-white pl-8 pr-16 py-7 slide-active rounded-2xl border-2 bottom-[-95px] right-[64px] absolute">
                         
                             <img src="./img/avatar1.png" alt="" class="w-16 h-16 rounded-full absolute left-[-30px] top-[-30px]">
 
@@ -286,14 +286,14 @@
                         <h4 class="text-sm">Lahore, Pakistan</h4>
                     </div>
                     
-                        <div class="my-slider w-[500px] h-[220px] bg-white pl-8 pr-16 py-7  border-2 rounded-2xl absolute bottom-[-95px] right-[64px]">
+                        <div class="my-slider lg:w-[500px] lg:h-[220px] bg-white pl-8 pr-16 py-7  border-2 rounded-2xl absolute bottom-[-95px] right-[64px]">
                                 <img src="./img/avatar1.png" alt="" class="w-16 h-16 rounded-full absolute left-[-30px] top-[-30px]">
     
                             <p>“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
                             <h3 class="mt-8 mb-1 font-semibold text-lg">Chris Thomas</h3>
                             <h4 class="text-sm">CEO of Red Button</h4>
                         </div>
-                        <div class="my-slider w-[500px] h-[220px] bg-white pl-8 pr-16 py-7 border-2 rounded-2xl absolute bottom-[-95px] right-[64px]">
+                        <div class="my-slider lg:w-[500px] lg:h-[220px] bg-white pl-8 pr-16 py-7 border-2 rounded-2xl absolute bottom-[-95px] right-[64px]">
                                 <img src="./img/avatar1.png" alt="" class="w-16 h-16 rounded-full absolute left-[-30px] top-[-30px]">
     
                             <p>“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
@@ -306,7 +306,7 @@
 
         <!-- air brand collab -->
         <section class="container max-w-[1200px] mx-auto mt-48">
-            <div class="flex gap-x-2">
+            <div class="flex lg:gap-x-2  gap-x-20 md:gap-x-10 lg:gap-y-0 gap-y-4 flex-wrap lg:flex-nowrap justify-center lg:justify-start ">
                 <div class="w-1/5 p-3 h-28 flex items-center justify-center">
                     <img src="./img/logo1.png" alt="">
                 </div>
